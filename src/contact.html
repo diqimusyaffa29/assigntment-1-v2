@@ -26,7 +26,7 @@
 
             <div class="">
                 <ul class="flex justify-evenly">
-                    <li class="bg-[#FF9C1B] text-white rounded-2xl mx-5 px-2">
+                    <li class="bg-[#E1E8EF] rounded-2xl mx-5 px-2">
                         <a href="index.html" class="flex flex-col items-center mx-3 my-3"
                             ><i class="fa-solid fa-house"></i><span>Home</span></a
                         >
@@ -36,7 +36,7 @@
                             ><i class="fa-solid fa-file-lines"></i><span>Resume</span></a
                         >
                     </li>
-                    <li class="bg-[#E1E8EF] rounded-2xl mx-5">
+                    <li class="bg-[#FF9C1B] text-white rounded-2xl mx-5">
                         <a href="contact.html" class="flex flex-col items-center mx-3 my-3"
                             ><i class="fa-solid fa-address-book"></i><span>Contact</span></a
                         >
@@ -45,7 +45,6 @@
             </div>
         </nav>
         <!-- NAVBAR END -->
-
         <!-- PROFILE DETAIL START -->
         <aside class="bg-[#FFFFFF] mx-10 rounded-3xl">
             <div class="flex flex-col justify-center">
@@ -136,59 +135,49 @@
         <!-- PROFILE DETAIL END -->
 
         <!-- MAIN START -->
-        <main class="bg-[#FFFFFF] mx-10 rounded-3xl font-poppin pt-2 px-3 mt-3 pb-3">
-            <div class="grid">
-                <h1 class="text-4xl">ABOUT ME</h1>
-                <span class="text-justify">
-                    Hello There! I'm thrilled to welcome you to my portfolio. I am a passionate and
-                    versatile full-stack developer with a keen interest in exploring the latest
-                    cutting edge technologies. My Journey in the world of web development has been
-                    nothing short of exhilarating, and I constantly strive to enchanve my skills and
-                    embrace emerging trends in the industry.
-                </span>
+        <main class="bg-[#FFFFFF] mx-10 rounded-3xl font-poppin pt-2 px-3 mt-3 grid gap-2 pb-8">
+            <h1 class="text-4xl mx-4">Contact</h1>
+            <div class="items-center bg-[#ffebd1] rounded-xl py-2">
+                <div class="mx-3">
+                    <span><i class="fas fa-phone-volume" style="color: #fa7815"></i> Phone:</span>
+                </div>
+                <div class="ml-6 grid grid-flow-row">
+                    <span>+254738509151</span>
+                    <span>+254723909353</span>
+                </div>
             </div>
-            <h1 class="text-3xl py-2">WHAT I DO</h1>
-            <div class="grid grid-rows-2 grid-flow-row lg:grid-cols-2 gap-1">
-                <div class="grid gap-1 bg-[#ffebd1] rounded-2xl py-2 px-4">
-                    <h1><i class="fa-solid fa-code" style="color: #ff0000"></i> Web Development</h1>
-                    <span class="text-justify"
-                        >as a Developer, I find myself most captivated by the power and flexibility
-                        of React.js. I'm always eager to dive into new projects that leverage
-                        React.js and discover innovative ways to create fast. scalable, and
-                        user-friendly applications.</span
-                    >
-                </div>
 
-                <div class="grid gap-1 bg-[#f2f7fc] rounded-2xl py-2 px-4">
-                    <h1><i class="fas fa-camera" style="color: #ff9c1a"></i> App Development</h1>
-                    <span class="text-justify"
-                        >With a fouces on user-centric design and cutting-edge technologies, I
-                        thrive on bulding intuitive and efficient apps that make a positive impact
-                        on people's lives. Let's turn ideas into reality and shape the future
-                        together.</span
-                    >
+            <div class="items-center bg-[#F2F5F9] rounded-xl py-2">
+                <div class="mx-3">
+                    <span><i class="fas fa-envelope" style="color: #fa7815"></i> Email:</span>
                 </div>
-                
-                <div class="grid gap-1 bg-[#f2f7fc] rounded-2xl py-2 px-4">
-                    <h1><i class="fas fa-window-close" style="color: #ff9c1a"></i> UI/UX</h1>
-                    <span class="text-justify"
-                    >Crafting visually appealing and intuitive user interfaces that offer a delighful user experience is something I'm truly fanatic about.</span
-                    >
+                <div class="ml-8 grid grid-flow-row">
+                    <span>hqwrs4@gmail.com</span>
                 </div>
+            </div>
 
-                <div class="grid gap-1 bg-[#ffebd1] rounded-2xl py-2 px-4">
-                    <h1>
-                        <i class="fas fa-chalkboard-teacher" style="color: #ff0000"></i> Mentorship
-                    </h1>
-                    <span class="text-justify"
-                    >I have also found great joy in sharing my knowledge with ohers. Being a
-                    technical mentor allows me to give back to the community that has supported
-                    me throughout my career.</span
-                    >
-                </div>
+            <div class="bg-[#F2F5F9] rounded-xl px-5 pb-8 pt-5">
+                <span class="text-justify"
+                    >I am always open to discussing
+                    <b>new projects, opportunities in tech world, partnerships</b> and more so
+                    <b>mentorship.</b></span
+                >
+                <form action="" class="mt-5">
+                    <div class="flex flex-col">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" class="bg-[#f2f5f9]">
+                        <hr>
+                        <label for="email">Email: </label>
+                        <input type="text" name="email" class="bg-[#f2f5f9]">
+                        <hr>
+                        <label for="message">Message: </label>
+                        <textarea name="message" id=""  class="bg-[#f2f5f9]"></textarea>
+                        <hr>
+                    </div>
+                    <button class="rounded-full border border-orange-500 py-2 px-10 mt-2"  type="submit">Submit</button>
+                </form>
             </div>
         </main>
         <!-- MAIN END -->
     </body>
-    </html>
-    
+</html>
