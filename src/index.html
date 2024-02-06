@@ -15,17 +15,18 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     </head>
-    <body class="bg-[#F2F5F9]">
+    <body class="bg-[#F2F5F9] lg:mx-48">
         <!-- NAVBAR START -->
         <nav class="mb-5">
             <div class="grid gap-8" id="logo">
-                <div class="flex justify-center">
-                    <img src="/assets/logo.png" alt="logo" class="h-16" />
+                <div class="flex justify-center lg:justify-start lg:pl-16">
+                    <img src="/assets/logo.png" alt="logo" class="h-16 lg:h-20" />
                 </div>
             </div>
 
-            <div class="">
-                <ul class="flex justify-evenly">
+            <div class="lg:relative ">
+                <ul
+                    class="flex justify-evenly lg:justify-end lg:rounded-3xl lg:shadow-lg lg:absolute lg:right-32 lg:py-3">
                     <li class="bg-[#FF9C1B] text-white rounded-2xl mx-5 px-2">
                         <a href="index.html" class="flex flex-col items-center mx-3 my-3"
                             ><i class="fa-solid fa-house"></i><span>Home</span></a
@@ -47,9 +48,9 @@
         <!-- NAVBAR END -->
 
         <!-- PROFILE DETAIL START -->
-        <aside class="bg-[#FFFFFF] mx-10 rounded-3xl">
+        <aside class="bg-[#FFFFFF] mx-10 rounded-3xl lg:ml-16 lg:mx-0 lg:absolute lg:pb-2 lg:h-fit">
             <div class="flex flex-col justify-center">
-                <img src="../assets/Picture1.png" alt="profile" class="h-36 mt-5 object-contain" />
+                <img src="../assets/Picture1.png" alt="profile" class="h-36 mt-5 object-contain lg:h-60" />
                 <h1 class="font-raleway font-[700] text-[28px] text-center">Beatrice Wambui</h1>
                 <h2 class="text-center font-raleway mb-3">Fullstack Developer</h2>
 
@@ -136,8 +137,8 @@
         <!-- PROFILE DETAIL END -->
 
         <!-- MAIN START -->
-        <main class="bg-[#FFFFFF] mx-10 rounded-3xl font-poppin pt-2 px-3 mt-3 pb-3">
-            <div class="grid">
+        <main class="bg-[#FFFFFF] mx-10 rounded-3xl font-poppin pt-2 px-3 mt-3 pb-3 lg:relative lg:mx-56 lg:top-24 lg:-right-36 lg:h-fit">
+            <div class="grid lg:gap-2">
                 <h1 class="text-4xl">ABOUT ME</h1>
                 <span class="text-justify">
                     Hello There! I'm thrilled to welcome you to my portfolio. I am a passionate and
@@ -148,7 +149,7 @@
                 </span>
             </div>
             <h1 class="text-3xl py-2">WHAT I DO</h1>
-            <div class="grid grid-rows-2 grid-flow-row lg:grid-cols-2 gap-1">
+            <div class="grid grid-rows-2 grid-flow-row lg:grid-cols-2 gap-1 lg:h-96">
                 <div class="grid gap-1 bg-[#ffebd1] rounded-2xl py-2 px-4">
                     <h1><i class="fa-solid fa-code" style="color: #ff0000"></i> Web Development</h1>
                     <span class="text-justify"
@@ -168,11 +169,12 @@
                         together.</span
                     >
                 </div>
-                
+
                 <div class="grid gap-1 bg-[#f2f7fc] rounded-2xl py-2 px-4">
                     <h1><i class="fas fa-window-close" style="color: #ff9c1a"></i> UI/UX</h1>
                     <span class="text-justify"
-                    >Crafting visually appealing and intuitive user interfaces that offer a delighful user experience is something I'm truly fanatic about.</span
+                        >Crafting visually appealing and intuitive user interfaces that offer a
+                        delighful user experience is something I'm truly fanatic about.</span
                     >
                 </div>
 
@@ -181,14 +183,13 @@
                         <i class="fas fa-chalkboard-teacher" style="color: #ff0000"></i> Mentorship
                     </h1>
                     <span class="text-justify"
-                    >I have also found great joy in sharing my knowledge with ohers. Being a
-                    technical mentor allows me to give back to the community that has supported
-                    me throughout my career.</span
+                        >I have also found great joy in sharing my knowledge with ohers. Being a
+                        technical mentor allows me to give back to the community that has supported
+                        me throughout my career.</span
                     >
                 </div>
             </div>
         </main>
         <!-- MAIN END -->
     </body>
-    </html>
-    
+</html>

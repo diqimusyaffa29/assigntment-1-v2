@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Landing Page - Diqi</title>
+        <title>Resume - Diqi</title>
         <link rel="stylesheet" href="./output.css" />
         <link
             rel="stylesheet"
@@ -15,18 +15,19 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     </head>
-    <body class="bg-[#F2F5F9]">
+    <body class="bg-[#F2F5F9] lg:mx-48">
         <!-- NAVBAR START -->
         <nav class="mb-5">
             <div class="grid gap-8" id="logo">
-                <div class="flex justify-center">
-                    <img src="/assets/logo.png" alt="logo" class="h-16" />
+                <div class="flex justify-center lg:justify-start lg:pl-16">
+                    <img src="/assets/logo.png" alt="logo" class="h-16 lg:h-20" />
                 </div>
             </div>
 
-            <div class="">
-                <ul class="flex justify-evenly">
-                    <li class="bg-[#E1E8EF]  rounded-2xl mx-5 px-2">
+            <div class="lg:relative">
+                <ul
+                    class="flex justify-evenly lg:justify-end lg:rounded-3xl lg:shadow-lg lg:absolute lg:right-32 lg:py-3">
+                    <li class="bg-[#E1E8EF] rounded-2xl mx-5 px-2">
                         <a href="index.html" class="flex flex-col items-center mx-3 my-3"
                             ><i class="fa-solid fa-house"></i><span>Home</span></a
                         >
@@ -46,9 +47,9 @@
         </nav>
         <!-- NAVBAR END -->
         <!-- PROFILE DETAIL START -->
-        <aside class="bg-[#FFFFFF] mx-10 rounded-3xl">
+        <aside class="bg-[#FFFFFF] mx-10 rounded-3xl lg:ml-16 lg:mx-0 lg:absolute lg:pb-2 lg:h-[75%]">
             <div class="flex flex-col justify-center">
-                <img src="../assets/Picture1.png" alt="profile" class="h-36 mt-5 object-contain" />
+                <img src="../assets/Picture1.png" alt="profile" class="h-36 mt-5 object-contain lg:h-60" />
                 <h1 class="font-raleway font-[700] text-[28px] text-center">Beatrice Wambui</h1>
                 <h2 class="text-center font-raleway mb-3">Fullstack Developer</h2>
 
@@ -133,70 +134,81 @@
             </div>
         </aside>
         <!-- PROFILE DETAIL END -->
-        
-        <!-- MAIN START -->
-        <main class="bg-[#FFFFFF] mx-10 rounded-3xl font-poppin pt-2 px-3 mt-3">
-            <div class="grid grid-rows-2 pb-0">
-                <div class="flex flex-col gap-2" id="education">
-                    <h1 class="text-4xl mx-4">Resume</h1>
-                    <span class="text-4xl mx-2"><i class="fas fa-graduation-cap" style="color: #ff9c1a"></i> Education</span>
-                    <div class="grid grid-rows-2 gap-2 ">
-                        <div class="grid grid-flow-row bg-[#ffebd1] rounded-2xl py-2 px-2">
-                            <span>2020 - 2021</span>
-                            <span>Software Development</span>
-                            <span>Moringa School</span>
-                        </div>
-                        <div class="grid grid-flow-row bg-[#ffebd1] rounded-2xl py-2 px-2">
-                            <span>2012 - 2016</span>
-                            <span>Disaster Management</span>
-                            <span>Masinde Muliro University</span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="flex flex-col gap-2" id="experience">
-                    <span class="text-4xl mx-2 mt-2"><i class="fas fa-briefcase" style="color: #ff9c1a"></i> Experience</span>
-                    <div class="grid grid-rows-2 gap-2 ">
-                        <div class="grid grid-flow-row bg-[#ffebd1] rounded-2xl py-2 px-2">
-                            <span>2022 - Present</span>
-                            <span>Technical Mentor</span>
-                            <span>Moringa School</span>
+        <!-- MAIN START -->
+        <main
+            class="bg-[#FFFFFF] mx-10 rounded-3xl font-poppin pt-2 px-3 mt-3 pb-3 lg:relative lg:mx-56 lg:top-24 lg:-right-36 lg:h-fit">
+            <div class="lg:mx-28">
+                <h1 class="text-4xl mx-4">Resume</h1>
+                <div class="grid grid-cols-1 pb-0 lg:grid-cols-2 lg:justify-evenly lg:gap-11">
+                    <div class="flex flex-col gap-2" id="education">
+                        <span class="text-4xl mx-2"
+                            ><i class="fas fa-graduation-cap" style="color: #ff9c1a"></i>
+                            Education</span
+                        >
+                        <div class="grid grid-rows-2 gap-2">
+                            <div class="grid grid-flow-row bg-[#ffebd1] rounded-2xl py-2 px-2">
+                                <span>2020 - 2021</span>
+                                <span>Software Development</span>
+                                <span>Moringa School</span>
+                            </div>
+                            <div class="grid grid-flow-row bg-[#ffebd1] rounded-2xl py-2 px-2">
+                                <span>2012 - 2016</span>
+                                <span>Disaster Management</span>
+                                <span>Masinde Muliro University</span>
+                            </div>
                         </div>
-                        <div class="grid grid-flow-row bg-[#ffebd1] rounded-2xl py-2 px-2">
-                            <span>2021 - 2022</span>
-                            <span>Website Development</span>
-                            <span>Village 2 Nation</span>
+                    </div>
+
+                    <div class="flex flex-col gap-2" id="experience">
+                        <span class="text-4xl mx-2 mt-2 lg:mt-0"
+                            ><i class="fas fa-briefcase" style="color: #ff9c1a"></i>
+                            Experience</span
+                        >
+                        <div class="grid grid-rows-2 gap-2">
+                            <div class="grid grid-flow-row bg-[#ffebd1] rounded-2xl py-2 px-2">
+                                <span>2022 - Present</span>
+                                <span>Technical Mentor</span>
+                                <span>Moringa School</span>
+                            </div>
+                            <div class="grid grid-flow-row bg-[#ffebd1] rounded-2xl py-2 px-2">
+                                <span>2021 - 2022</span>
+                                <span>Website Development</span>
+                                <span>Village 2 Nation</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="grid grid-rows-2">
-                <div class="">
-                    <span class="text-4xl mx-2 mt-2">Work Skills</span>
-                    <div class="grid grid-cols-3 text-center gap-2 text-wrap items-center">
-                        <div class="bg-[#E1E8EF] rounded-xl">NEXT.js</div>
-                        <div class="bg-[#E1E8EF] rounded-xl">React.js</div>
-                        <div class="bg-[#E1E8EF] rounded-xl">HTML5</div>
-                        <div class="bg-[#E1E8EF] rounded-xl">CSS 3</div>
-                        <div class="bg-[#E1E8EF] rounded-xl text-sm">Tailwind CSS</div>
-                        <div class="bg-[#E1E8EF] rounded-xl">Figma</div>
-                        <div class="bg-[#E1E8EF] rounded-xl">JavaScript</div>
-                        <div class="bg-[#E1E8EF] rounded-xl">Mongo DB</div>
-                        <div class="bg-[#E1E8EF] rounded-xl">SQL</div>
-                        <div class="bg-[#E1E8EF] rounded-xl">Angular</div>
-                        <div class="bg-[#E1E8EF] rounded-xl">Anroid</div>
-                        <div class="bg-[#E1E8EF] rounded-xl">Git</div>
+                <div class="grid grid-rows-2">
+                    <div class="">
+                        <span class="text-4xl mx-2 mt-2">Work Skills</span>
+                        <div class="grid grid-cols-3 text-center gap-2 text-wrap items-center">
+                            <div class="bg-[#E1E8EF] rounded-xl">NEXT.js</div>
+                            <div class="bg-[#E1E8EF] rounded-xl">React.js</div>
+                            <div class="bg-[#E1E8EF] rounded-xl">HTML5</div>
+                            <div class="bg-[#E1E8EF] rounded-xl">CSS 3</div>
+                            <div class="bg-[#E1E8EF] rounded-xl text-sm">Tailwind CSS</div>
+                            <div class="bg-[#E1E8EF] rounded-xl">Figma</div>
+                            <div class="bg-[#E1E8EF] rounded-xl">JavaScript</div>
+                            <div class="bg-[#E1E8EF] rounded-xl">Mongo DB</div>
+                            <div class="bg-[#E1E8EF] rounded-xl">SQL</div>
+                            <div class="bg-[#E1E8EF] rounded-xl">Angular</div>
+                            <div class="bg-[#E1E8EF] rounded-xl">Anroid</div>
+                            <div class="bg-[#E1E8EF] rounded-xl">Git</div>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-5">
-                    <span class="text-4xl mx-2 mt-2">Soft Skills</span>
-                    <div class="grid grid-cols-3 text-center gap-2 text-wrap items-center ">
-                        <div class="bg-[#E1E8EF] rounded-xl text-xs">Time Management</div>
-                        <div class="bg-[#E1E8EF] rounded-xl text-sm">Mentorship</div>
-                        <div class="bg-[#E1E8EF] rounded-xl text-[10px]">Impeccable Communication</div>
-                        <div class="bg-[#E1E8EF] rounded-xl text-sm">Flexibility</div>
-                        <div class="bg-[#E1E8EF] rounded-xl text-sm">Research</div>
-                        <div class="bg-[#E1E8EF] rounded-xl text-sm">Writing</div>
+                    <div class="mt-5">
+                        <span class="text-4xl mx-2 mt-2">Soft Skills</span>
+                        <div class="grid grid-cols-3 text-center gap-2 text-wrap items-center">
+                            <div class="bg-[#E1E8EF] rounded-xl text-xs">Time Management</div>
+                            <div class="bg-[#E1E8EF] rounded-xl text-sm">Mentorship</div>
+                            <div class="bg-[#E1E8EF] rounded-xl text-[10px]">
+                                Impeccable Communication
+                            </div>
+                            <div class="bg-[#E1E8EF] rounded-xl text-sm">Flexibility</div>
+                            <div class="bg-[#E1E8EF] rounded-xl text-sm">Research</div>
+                            <div class="bg-[#E1E8EF] rounded-xl text-sm">Writing</div>
+                        </div>
                     </div>
                 </div>
             </div>
