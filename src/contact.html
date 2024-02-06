@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact Page - Diqi</title>
+        <title>Resume - Diqi</title>
         <link rel="stylesheet" href="./output.css" />
         <link
             rel="stylesheet"
@@ -15,17 +15,18 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     </head>
-    <body class="bg-[#F2F5F9]">
+    <body class="bg-[#F2F5F9] lg:mx-48">
         <!-- NAVBAR START -->
         <nav class="mb-5">
             <div class="grid gap-8" id="logo">
-                <div class="flex justify-center">
-                    <img src="/assets/logo.png" alt="logo" class="h-16" />
+                <div class="flex justify-center lg:justify-start lg:pl-16">
+                    <img src="/assets/logo.png" alt="logo" class="h-16 lg:h-20" />
                 </div>
             </div>
 
-            <div class="">
-                <ul class="flex justify-evenly">
+            <div class="lg:relative">
+                <ul
+                    class="flex justify-evenly lg:justify-end lg:rounded-3xl lg:shadow-lg lg:absolute lg:right-32 lg:py-3">
                     <li class="bg-[#E1E8EF] rounded-2xl mx-5 px-2">
                         <a href="index.html" class="flex flex-col items-center mx-3 my-3"
                             ><i class="fa-solid fa-house"></i><span>Home</span></a
@@ -46,9 +47,13 @@
         </nav>
         <!-- NAVBAR END -->
         <!-- PROFILE DETAIL START -->
-        <aside class="bg-[#FFFFFF] mx-10 rounded-3xl">
+        <aside
+            class="bg-[#FFFFFF] mx-10 rounded-3xl lg:ml-16 lg:mx-0 lg:absolute lg:pb-2 lg:h-[75%]">
             <div class="flex flex-col justify-center">
-                <img src="../assets/Picture1.png" alt="profile" class="h-36 mt-5 object-contain" />
+                <img
+                    src="../assets/Picture1.png"
+                    alt="profile"
+                    class="h-36 mt-5 object-contain lg:h-60" />
                 <h1 class="font-raleway font-[700] text-[28px] text-center">Beatrice Wambui</h1>
                 <h2 class="text-center font-raleway mb-3">Fullstack Developer</h2>
 
@@ -135,47 +140,61 @@
         <!-- PROFILE DETAIL END -->
 
         <!-- MAIN START -->
-        <main class="bg-[#FFFFFF] mx-10 rounded-3xl font-poppin pt-2 px-3 mt-3 grid gap-2 pb-8">
-            <h1 class="text-4xl mx-4">Contact</h1>
-            <div class="items-center bg-[#ffebd1] rounded-xl py-2">
-                <div class="mx-3">
-                    <span><i class="fas fa-phone-volume" style="color: #fa7815"></i> Phone:</span>
-                </div>
-                <div class="ml-6 grid grid-flow-row">
-                    <span>+254738509151</span>
-                    <span>+254723909353</span>
-                </div>
-            </div>
-
-            <div class="items-center bg-[#F2F5F9] rounded-xl py-2">
-                <div class="mx-3">
-                    <span><i class="fas fa-envelope" style="color: #fa7815"></i> Email:</span>
-                </div>
-                <div class="ml-8 grid grid-flow-row">
-                    <span>hqwrs4@gmail.com</span>
-                </div>
-            </div>
-
-            <div class="bg-[#F2F5F9] rounded-xl px-5 pb-8 pt-5">
-                <span class="text-justify"
-                    >I am always open to discussing
-                    <b>new projects, opportunities in tech world, partnerships</b> and more so
-                    <b>mentorship.</b></span
-                >
-                <form action="" class="mt-5">
-                    <div class="flex flex-col">
-                        <label for="name">Name: </label>
-                        <input type="text" name="name" class="bg-[#f2f5f9]">
-                        <hr>
-                        <label for="email">Email: </label>
-                        <input type="text" name="email" class="bg-[#f2f5f9]">
-                        <hr>
-                        <label for="message">Message: </label>
-                        <textarea name="message" id=""  class="bg-[#f2f5f9]"></textarea>
-                        <hr>
+        <main
+            class="bg-[#FFFFFF] mx-10 rounded-3xl font-poppin pt-2 px-3 mt-3 grid gap-2 pb-8 lg:relative lg:mx-56 lg:top-24 lg:-right-36 lg:h-fit lg:pb-32">
+            <div class="grid gap-2 lg:mx-20">
+                <h1 class="text-4xl">Contact</h1>
+                <div class="grid gap-2 lg:grid-flow-col">
+                    <div class="items-center bg-[#ffebd1] rounded-xl py-2">
+                        <div class="mx-3">
+                            <span
+                                ><i class="fas fa-phone-volume" style="color: #fa7815"></i>
+                                Phone:</span
+                            >
+                        </div>
+                        <div class="ml-6 grid grid-flow-row">
+                            <span>+254738509151</span>
+                            <span>+254723909353</span>
+                        </div>
                     </div>
-                    <button class="rounded-full border border-orange-500 py-2 px-10 mt-2"  type="submit">Submit</button>
-                </form>
+
+                    <div class="items-center bg-[#F2F5F9] rounded-xl py-2">
+                        <div class="mx-3">
+                            <span
+                                ><i class="fas fa-envelope" style="color: #fa7815"></i> Email:</span
+                            >
+                        </div>
+                        <div class="ml-8 grid grid-flow-row">
+                            <span>hqwrs4@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#F2F5F9] rounded-xl px-5 pb-8 pt-5">
+                    <span class="text-justify"
+                        >I am always open to discussing
+                        <b>new projects, opportunities in tech world, partnerships</b> and more so
+                        <b>mentorship.</b></span
+                    >
+                    <form action="" class="mt-5">
+                        <div class="flex flex-col">
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" class="bg-[#f2f5f9]" />
+                            <hr />
+                            <label for="email">Email: </label>
+                            <input type="text" name="email" class="bg-[#f2f5f9]" />
+                            <hr />
+                            <label for="message">Message: </label>
+                            <textarea name="message" id="" class="bg-[#f2f5f9]"></textarea>
+                            <hr />
+                        </div>
+                        <button
+                            class="rounded-full border border-orange-500 py-2 px-10 mt-2"
+                            type="submit">
+                            Submit
+                        </button>
+                    </form>
+                </div>
             </div>
         </main>
         <!-- MAIN END -->
